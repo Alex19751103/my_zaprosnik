@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПроверить" id="75" DisplayImportance="VeryHigh">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<DefaultItem>true</DefaultItem>
+				<CommandName>Form.Command.Проверить</CommandName>
+				<ExtendedTooltip name="ФормаПроверитьРасширеннаяПодсказка" id="76"/>
+			</Button>
+			<Button name="ФормаПочистить" id="73">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Почистить</CommandName>
+				<ExtendedTooltip name="ФормаПочиститьРасширеннаяПодсказка" id="74"/>
+			</Button>
+			<Button name="ФормаПоменять" id="71">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Поменять</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаПоменятьРасширеннаяПодсказка" id="72"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Pages name="ПанельСписков" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель списков</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель списков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ПанельСписковРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="ИсходныеСписки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исходные списки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исходные списки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="ИсходныеСпискиРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="93">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="94"/>
+							<ChildItems>
+								<Button name="ВставитьИзБуфера1" id="89">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ВставитьИзБуфера1</CommandName>
+									<ExtendedTooltip name="ВставитьИзБуфера1РасширеннаяПодсказка" id="90"/>
+								</Button>
+								<TextDocumentField name="ПолеСписка1" id="77">
+									<DataPath>ПолеСписка1</DataPath>
+									<ContextMenu name="ПолеСписка1КонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="ПолеСписка1РасширеннаяПодсказка" id="79"/>
+								</TextDocumentField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа2" id="95">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="96"/>
+							<ChildItems>
+								<Button name="ВставитьИзБуфера2" id="91">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ВставитьИзБуфера2</CommandName>
+									<ExtendedTooltip name="ВставитьИзБуфера2РасширеннаяПодсказка" id="92"/>
+								</Button>
+								<TextDocumentField name="ПолеСписка2" id="80">
+									<DataPath>ПолеСписка2</DataPath>
+									<ContextMenu name="ПолеСписка2КонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ПолеСписка2РасширеннаяПодсказка" id="82"/>
+								</TextDocumentField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="РазличияВСписках" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Различия в списках</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Различия в списках</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="РазличияВСпискахРасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<TextDocumentField name="ПолеСпискаРезультат1" id="83">
+							<DataPath>ПолеСпискаРезультат1</DataPath>
+							<ContextMenu name="ПолеСпискаРезультат1КонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="ПолеСпискаРезультат1РасширеннаяПодсказка" id="85"/>
+						</TextDocumentField>
+						<TextDocumentField name="ПолеСпискаРезультат2" id="86">
+							<DataPath>ПолеСпискаРезультат2</DataPath>
+							<ContextMenu name="ПолеСпискаРезультат2КонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="ПолеСпискаРезультат2РасширеннаяПодсказка" id="88"/>
+						</TextDocumentField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.Запросник3_1</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПолеСписка1" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле списка1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолеСписка2" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле списка2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолеСпискаРезультат1" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле списка результат1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолеСпискаРезультат2" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле списка результат2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Поменять" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поменять</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поменять</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Поменять</Action>
+		</Command>
+		<Command name="Проверить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Проверить</Action>
+		</Command>
+		<Command name="Почистить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Почистить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Почистить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Почистить</Action>
+		</Command>
+		<Command name="ВставитьИзБуфера1" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить из буфера1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить из буфера1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьИзБуфера1</Action>
+		</Command>
+		<Command name="ВставитьИзБуфера2" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить из буфера2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить из буфера2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьИзБуфера2</Action>
+		</Command>
+	</Commands>
+</Form>
